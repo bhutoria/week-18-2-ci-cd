@@ -1,12 +1,11 @@
 "use client";
 import { signIn, signOut, useSession } from "next-auth/react";
 import { Appbar } from "@repo/ui/appbar";
+import { useRouter } from "next/navigation";
 
 export function AppbarClient() {
   const session = useSession();
-
-  const ls = "bada bada boom boom";
-  const change = ls + "sdf";
+  const router = useRouter();
 
   return (
     <div className="h-full w-full">
@@ -18,7 +17,6 @@ export function AppbarClient() {
         }}
         user={session.data?.user}
       />
-      <span>{change}</span>
     </div>
   );
 }
