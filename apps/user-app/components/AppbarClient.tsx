@@ -5,7 +5,6 @@ import { useRouter } from "next/navigation";
 
 export function AppbarClient() {
   const session = useSession();
-  const router = useRouter();
 
   const ls = "bada bada boom boom";
   const change = ls + "sdf";
