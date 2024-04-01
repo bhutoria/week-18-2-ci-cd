@@ -8,7 +8,6 @@ export function AppbarClient() {
   const router = useRouter();
 
   const ls = "bada bada boom boom";
-
   const change = ls + "sdf";
 
   return (
