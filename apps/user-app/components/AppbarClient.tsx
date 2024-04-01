@@ -7,6 +7,10 @@ export function AppbarClient() {
   const session = useSession();
   const router = useRouter();
 
+  const ls = "bada bada boom boom";
+
+  const change = ls + "sdf";
+
   return (
     <div className="h-full w-full">
       <Appbar
@@ -17,6 +21,7 @@ export function AppbarClient() {
         }}
         user={session.data?.user}
       />
+      <span>{change}</span>
     </div>
   );
 }
